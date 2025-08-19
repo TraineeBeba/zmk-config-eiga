@@ -35,8 +35,6 @@
 };
 
 &mmv {
-    acceleration-exponent = <3>;
-    time-to-max-speed-ms = <200>;
 };
 
 / {
@@ -64,7 +62,7 @@
         &kp Q       &kp W       &kp F         &kp P         &kp B        &kp J        &kp L        &kp U         &kp Y       &kp SEMI
         &hm LGUI A  &hm LALT R  &hm LCTRL S   &hm LSHIFT T  &kp G        &kp M        &hm RSHFT N  &hm RCTRL E   &hm RALT I  &hm RGUI O
 &tog 7  &kp Z       &kp X       &kp C         &kp D         &kp V        &kp K        &kp H        &kp COMMA     &kp DOT     &kp SLASH   &kp APOSTROPHE
-                                &lt 6 ESCAPE  &lt 1 SPACE   &lt 2 TAB    &lt 3 ENTER  &lt 4 BSPC   &lt 6 DELETE
+                                &lt 6 ESCAPE  &lt 1 SPACE   &lt 2 TAB    &lt 3 ENTER  &lt 4 BSPC   &lt 5 DELETE
             >;
         };
 
@@ -121,20 +119,20 @@
         Media {
             display-name = "Media";
             bindings = <
-       &none   &none   &none   &none   &none     &kp K_REDO    &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO
-       &trans  &trans  &trans  &trans  &none     &kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&none  &none   &none   &none   &none   &none     &kp INSERT    &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &none
-                       &trans  &trans  &trans    &trans        &trans          &trans
+       &none   &none   &none   &none   &none     &kp K_REDO    &kp K_PASTE       &kp K_COPY         &kp K_CUT     &kp K_UNDO
+       &trans  &trans  &trans  &trans  &none     &kp CAPSLOCK  &kp C_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_NEXT
+&none  &none   &none   &none   &none   &none     &kp INSERT    &kp HOME          &kp C_BRI_DEC      &kp C_BRI_UP  &kp END     &none
+                       &trans  &trans  &trans    &trans        &kp C_PLAY_PAUSE  &kp C_MUTE
             >;
         };
 
         Qwerty {
             display-name = "Qwerty";
             bindings = <
-        &kp Q       &kp W       &kp E        &kp R         &kp T          &kp Y      &kp U        &kp I         &kp O       &kp P
-        &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F  &kp G          &kp H      &hm RSHFT J  &hm RCTRL K   &hm RALT L  &hm RGUI SEMICOLON
-&tog 0  &kp Z       &kp X       &kp C        &kp V         &kp B          &kp N      &kp M        &kp COMMA     &kp DOT     &kp SLASH           &kp APOSTROPHE
-                                &lt 6 DEL    &lt 1 TAB     &lt 2 SPACE    &lt 3 RET  &lt 4 BSPC   &lt 5 DELETE
+        &kp Q       &kp W       &kp E        &kp R         &kp T        &kp Y      &kp U        &kp I         &kp O       &kp P
+        &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F  &kp G        &kp H      &hm RSHFT J  &hm RCTRL K   &hm RALT L  &hm RGUI SEMICOLON
+&tog 7  &kp Z       &kp X       &kp C        &kp V         &kp B        &kp N      &kp M        &kp COMMA     &kp DOT     &kp SLASH           &kp APOSTROPHE
+                                &lt 6 DEL    &lt 1 SPACE   &lt 2 TAB    &lt 3 RET  &lt 4 BSPC   &lt 5 DELETE
             >;
         };
     };
