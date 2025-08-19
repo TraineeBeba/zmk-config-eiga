@@ -61,10 +61,10 @@
         BaseColemakDHK {
             display-name = "BaseColemakDHK";
             bindings = <
-              &kp Q       &kp W       &kp F         &kp P         &kp B        &kp J        &kp L        &kp U         &kp Y       &kp SEMI
-              &hm LGUI A  &hm LALT R  &hm LCTRL S   &hm LSHIFT T  &kp G        &kp M        &hm RSHFT N  &hm RCTRL E   &hm RALT I  &hm RGUI O
-&lt 0 ESCAPE  &kp Z       &kp X       &kp C         &kp D         &kp V        &kp K        &kp H        &kp COMMA     &kp DOT     &kp SLASH   &kp APOSTROPHE
-                                      &lt 7 ESCAPE  &lt 1 SPACE   &lt 2 TAB    &lt 3 ENTER  &lt 6 BSPC   &lt 4 DELETE
+        &kp Q       &kp W       &kp F         &kp P         &kp B        &kp J        &kp L        &kp U         &kp Y       &kp SEMI
+        &hm LGUI A  &hm LALT R  &hm LCTRL S   &hm LSHIFT T  &kp G        &kp M        &hm RSHFT N  &hm RCTRL E   &hm RALT I  &hm RGUI O
+&tog 7  &kp Z       &kp X       &kp C         &kp D         &kp V        &kp K        &kp H        &kp COMMA     &kp DOT     &kp SLASH   &kp APOSTROPHE
+                                &lt 6 ESCAPE  &lt 1 SPACE   &lt 2 TAB    &lt 3 ENTER  &lt 4 BSPC   &lt 6 DELETE
             >;
         };
 
@@ -98,26 +98,6 @@
             >;
         };
 
-        Fun {
-            display-name = "Fun";
-            bindings = <
-       &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &none   &none   &none   &none   &none
-       &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &none   &trans  &trans  &trans  &trans
-&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &none   &none   &none   &none   &none   &none
-                        &trans  &trans  &trans             &trans  &trans  &trans
-            >;
-        };
-
-        Qwerty {
-            display-name = "Qwerty";
-            bindings = <
-              &kp Q       &kp W       &kp E          &kp R         &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
-              &hm LGUI A  &hm LALT S  &hm LCTRL D    &hm LSHIFT F  &kp G        &kp H    &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
-&lt 0 ESCAPE  &kp Z       &kp X       &kp C          &kp V         &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp SLASH           &kp APOSTROPHE
-                                      &mt LCTRL DEL  &lt 1 TAB     &kp SPACE    &kp RET  &lt 0 BSPC   &kp MINUS
-            >;
-        };
-
         Sym {
             display-name = "Sym";
             bindings = <
@@ -128,6 +108,16 @@
             >;
         };
 
+        Fun {
+            display-name = "Fun";
+            bindings = <
+       &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &none   &none   &none   &none   &none
+       &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &none   &trans  &trans  &trans  &trans
+&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &none   &none   &none   &none   &none   &none
+                        &trans  &trans  &trans             &trans  &trans  &trans
+            >;
+        };
+
         Media {
             display-name = "Media";
             bindings = <
@@ -135,6 +125,16 @@
        &trans  &trans  &trans  &trans  &none     &kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
 &none  &none   &none   &none   &none   &none     &kp INSERT    &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &none
                        &trans  &trans  &trans    &trans        &trans          &trans
+            >;
+        };
+
+        Qwerty {
+            display-name = "Qwerty";
+            bindings = <
+        &kp Q       &kp W       &kp E        &kp R         &kp T          &kp Y      &kp U        &kp I         &kp O       &kp P
+        &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F  &kp G          &kp H      &hm RSHFT J  &hm RCTRL K   &hm RALT L  &hm RGUI SEMICOLON
+&tog 0  &kp Z       &kp X       &kp C        &kp V         &kp B          &kp N      &kp M        &kp COMMA     &kp DOT     &kp SLASH           &kp APOSTROPHE
+                                &lt 6 DEL    &lt 1 TAB     &lt 2 SPACE    &lt 3 RET  &lt 4 BSPC   &lt 5 DELETE
             >;
         };
     };
