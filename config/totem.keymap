@@ -61,10 +61,10 @@
         BaseColemakDHK {
             display-name = "BaseColemakDHK";
             bindings = <
-              &kp Q       &kp W       &kp F             &kp P         &kp B      &kp J    &kp L        &kp U        &kp Y       &kp SEMI
-              &hm LGUI A  &hm LALT R  &hm LCTRL S       &hm LSHIFT T  &kp G      &kp M    &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O
-&lt 0 ESCAPE  &kp Z       &kp X       &kp C             &kp D         &kp V      &kp K    &kp H        &kp COMMA    &kp DOT     &kp SLASH   &kp APOSTROPHE
-                                      &mt LCTRL ESCAPE  &lt 1 SPACE   &kp TAB    &kp RET  &lt 0 BSPC   &kp DELETE
+              &kp Q       &kp W       &kp F         &kp P         &kp B        &kp J        &kp L        &kp U         &kp Y       &kp SEMI
+              &hm LGUI A  &hm LALT R  &hm LCTRL S   &hm LSHIFT T  &kp G        &kp M        &hm RSHFT N  &hm RCTRL E   &hm RALT I  &hm RGUI O
+&lt 0 ESCAPE  &kp Z       &kp X       &kp C         &kp D         &kp V        &kp K        &kp H        &kp COMMA     &kp DOT     &kp SLASH   &kp APOSTROPHE
+                                      &lt 7 ESCAPE  &lt 1 SPACE   &lt 2 TAB    &lt 3 ENTER  &lt 6 BSPC   &lt 4 DELETE
             >;
         };
 
