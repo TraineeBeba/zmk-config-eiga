@@ -29,7 +29,10 @@
     quick-tap-ms = <150>;
 };
 
-&mmv { acceleration-exponent = <3>; };
+&mmv {
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <800>;
+};
 
 / {
     behaviors {
