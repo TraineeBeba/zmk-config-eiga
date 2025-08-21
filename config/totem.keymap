@@ -34,8 +34,7 @@
     quick-tap-ms = <150>;
 };
 
-&mmv {
-};
+&mmv { acceleration-exponent = <3>; };
 
 / {
     behaviors {
