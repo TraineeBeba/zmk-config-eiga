@@ -148,6 +148,16 @@
             >;
         };
 
+        Qwerty_Toggle {
+            display-name = "Qwerty_Toggle";
+            bindings = <
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                                  &trans &trans &trans &trans &trans &trans
+            >;
+        };
+
         Qwerty {
             display-name = "Qwerty";
             bindings = <
