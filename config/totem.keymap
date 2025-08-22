@@ -16,7 +16,6 @@
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
-
 #define BASE_COLEMAK 0
 #define NAV 1
 #define NUM 2
@@ -66,10 +65,10 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-    
+
         qwerty_toggle {
-            if-layers = <QWERTY_TOGGLE>;
-            then-layer = <QWERTY>;
+            if-layers = <1>;
+            then-layer = <1>;
         };
     };
 
@@ -83,8 +82,18 @@
             bindings = <
         &kp Q       &kp W       &kp F         &kp P         &kp B        &kp J        &kp L        &kp U         &kp Y       &kp SEMI
         &hm LGUI A  &hm LALT R  &hm LCTRL S   &hm LSHIFT T  &kp G        &kp M        &hm RSHFT N  &hm RCTRL E   &hm RALT I  &hm RGUI O
-&tog 7  &kp Z       &kp X       &kp C         &kp D         &kp V        &kp K        &kp H        &kp COMMA     &kp DOT     &kp SLASH   &kp APOSTROPHE
-                                &lt 6 ESCAPE  &lt 1 SPACE   &lt 2 TAB    &lt 3 ENTER  &lt 4 BSPC   &lt 5 DELETE
+&tog 1  &kp Z       &kp X       &kp C         &kp D         &kp V        &kp K        &kp H        &kp COMMA     &kp DOT     &kp SLASH   &kp APOSTROPHE
+                                &lt 7 ESCAPE  &lt 2 SPACE   &lt 3 TAB    &lt 4 ENTER  &lt 5 BSPC   &lt 6 DELETE
+            >;
+        };
+
+        Qwerty {
+            display-name = "Qwerty";
+            bindings = <
+        &kp Q       &kp W       &kp E        &kp R         &kp T        &kp Y      &kp U        &kp I         &kp O       &kp P
+        &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F  &kp G        &kp H      &hm RSHFT J  &hm RCTRL K   &hm RALT L  &hm RGUI SEMICOLON
+&tog 1  &kp Z       &kp X       &kp C        &kp V         &kp B        &kp N      &kp M        &kp COMMA     &kp DOT     &kp SLASH           &kp APOSTROPHE
+                                &lt 7 DEL    &lt 2 SPACE   &lt 3 TAB    &lt 4 RET  &lt 5 BSPC   &lt 6 DELETE
             >;
         };
 
@@ -145,26 +154,6 @@
        &trans  &trans  &trans  &trans  &none     &kp CAPSLOCK  &kp C_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_NEXT
 &none  &none   &none   &none   &none   &none     &kp INSERT    &kp HOME          &kp C_BRI_DEC      &kp C_BRI_UP  &kp END     &none
                        &trans  &trans  &trans    &trans        &kp C_PLAY_PAUSE  &kp C_MUTE
-            >;
-        };
-
-        Qwerty_Toggle {
-            display-name = "Qwerty_Toggle";
-            bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                                  &trans &trans &trans &trans &trans &trans
-            >;
-        };
-
-        Qwerty {
-            display-name = "Qwerty";
-            bindings = <
-        &kp Q       &kp W       &kp E        &kp R         &kp T        &kp Y      &kp U        &kp I         &kp O       &kp P
-        &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F  &kp G        &kp H      &hm RSHFT J  &hm RCTRL K   &hm RALT L  &hm RGUI SEMICOLON
-&tog 7  &kp Z       &kp X       &kp C        &kp V         &kp B        &kp N      &kp M        &kp COMMA     &kp DOT     &kp SLASH           &kp APOSTROPHE
-                                &lt 6 DEL    &lt 1 SPACE   &lt 2 TAB    &lt 3 RET  &lt 4 BSPC   &lt 5 DELETE
             >;
         };
     };
