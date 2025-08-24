@@ -131,8 +131,8 @@
             display-name = "Sym";
             bindings = <
         &kp GRAVE      &kp LESS_THAN      &kp GREATER_THAN  &kp MINUS        &kp PIPE         &kp CARET       &kp LEFT_BRACE              &kp RIGHT_BRACE             &kp DOLLAR     &kp RIGHT_ARROW
-        &hm LGUI EXCL  &hm LALT ASTERISK  &hm LCTRL SLASH   &hm LSHFT EQUAL  &kp AMPERSAND    &hm RSHFT HASH  &hm RCTRL LEFT_PARENTHESIS  &hm RALT RIGHT_PARENTHESIS  &hm RGUI SEMI  &kp SINGLE_QUOTE
-&trans  &kp TILDE      &kp PLUS           &kp LBKT          &kp RBKT         &kp PERCENT      &kp AT          &kp COLON                   &kp SQT                     &kp DOT        &kp QUESTION      &trans
+        &hm LGUI EXCL  &hm LALT ASTERISK  &hm LCTRL SLASH   &hm LSHFT EQUAL  &kp AMPERSAND    &hm RSHFT HASH  &hm RCTRL LEFT_PARENTHESIS  &hm RALT RIGHT_PARENTHESIS  &hm RGUI SEMI  &kp DOUBLE_QUOTES
+&trans  &kp TILDE      &kp PLUS           &kp LBKT          &kp RBKT         &kp PERCENT      &kp AT          &kp COLON                   &kp SQT                     &kp DOT        &kp SINGLE_QUOTE   &trans
                                           &trans            &trans           &trans           &trans          &trans                      &trans
             >;
         };
