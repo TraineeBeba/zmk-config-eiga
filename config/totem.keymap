@@ -63,14 +63,7 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        qwerty_toggle {
-            if-layers = <1>;
-            then-layer = <1>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     combos { compatible = "zmk,combos"; };
 
